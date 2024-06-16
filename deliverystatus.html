@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Delivery Tracking</title>
+    <link rel="stylesheet" href="CSS/style4.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Order Delivery Tracking</h1>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="customerName">Customer Name:</label>
+                <input type="text" id="customerName" name="customerName" required>
+            </div>
+            <div class="form-group">
+                <label for="orderId">Order ID:</label>
+                <input type="text" id="orderId" name="orderId" required>
+            </div>
+            <div class="form-group">
+                <label for="trackingNumber">Tracking Number:</label>
+                <input type="text" id="trackingNumber" name="trackingNumber" required>
+            </div>
+            <div class="form-group">
+                <label for="orderStatus">Status of the Order:</label>
+                <select id="orderStatus" name="orderStatus" required>
+                    <option value="processing">Processing</option>
+                    <option value="shipped">Shipped</option>
+                    <option value="outForDelivery">Out for Delivery</option>
+                    <option value="delivered">Delivered</option>
+                    <option value="cancelled">Cancelled</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="arrivalDate">Expected Arrival Date:</label>
+                <input type="date" id="arrivalDate" name="arrivalDate" required>
+            </div>
+            <button type="submit">Track Order</button>
+        </form>
+    </div>
+</body>
+</html>
