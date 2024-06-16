@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replace Order</title>
+    <link rel="stylesheet" href="CSS/style3.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Replace Order</h1>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="customerName">Customer Name:</label>
+                <input type="text" id="customerName" name="customerName" required>
+            </div>
+            <div class="form-group">
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Format: 123-456-7890" required>
+            </div>
+            <div class="form-group">
+                <label for="orderId">Order ID:</label>
+                <input type="text" id="orderId" name="orderId" required>
+            </div>
+            <div class="form-group">
+                <label for="paymentType">Payment Type:</label>
+                <select id="paymentType" name="paymentType" required>
+                    <option value="credit">Credit Card</option>
+                    <option value="debit">Debit Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="returnOrReplace">Return or Replacement:</label>
+                <select id="returnOrReplace" name="returnOrReplace" required>
+                    <option value="return">Return</option>
+                    <option value="replacement">Replacement</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="trackingNumber">Tracking Number:</label>
+                <input type="text" id="trackingNumber" name="trackingNumber">
+            </div>
+            <button type="submit">Submit Request</button>
+        </form>
+    </div>
+</body>
+</html>
